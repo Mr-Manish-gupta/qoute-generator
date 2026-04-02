@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE&display=swap');
+
+body{
+    text-align: center;
+    font-family: Arial;
+    margin-top: 14%;
+    background: #f4f4f4;
+    font-size: 30px;
+    font-family: 'Poppins',sans-serif;
+}
+h1{
+    margin-bottom: 50px;
+    font-family: 'Playwrite IE', cursive;
+}
+
+.card{
+        border: 1px solid rgb(181, 181, 181);
+        padding: 40px 20px;
+        width: 90%;
+        max-width: 500px;
+        margin:auto;
+        background-color: rgb(108, 166, 228);
+        left: 50px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0,0,0.2);
+        color: black;
+        transition: 0.3s;
+}
+
+button{
+    padding: 20px 40px;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 100px;
+    font-weight: 600;
+}
+p{
+    color: white;
+}
+button:hover{
+   
+    border-radius: 10px;
+    color: red;
+}
+
+@media(max-width: 700px){
+    h1{
+        margin-top: 210px;
+        font-size: 25px;
+    }
+    button{
+        font-size: 14px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .card{
+        width: 50%;
+        max-width: 250px;
+        padding: 20px;
+    }
+}
+
+.fade{
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from{ opacity: 0;}
+    to{opacity: 1;}
+}
